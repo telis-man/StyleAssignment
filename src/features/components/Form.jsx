@@ -3,22 +3,20 @@ import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faUser, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../core/components/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./FormStyle.scss";
 import InputWithIcon from "../../core/components/InputWithIcon";
 
 //Icons are not completely accurate because there was no identical icons on fontawesome
 
-export const Form = ({}) => {
-  const handleButtonClick = () => {
-    console.log("Button clicked!");
+export const Form = () => {
+  const handleButtonClick = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Submited Successfully");
   };
   return (
     <>
-      <form
-        className="formComponent"
-        onSubmit={(event) => event.preventDefault()}
-      >
+      <form className="formComponent" onSubmit={handleSubmit}>
         <h1>Get Started</h1>
         <p>Already have an account?</p>
         <a href="google.com" className="logInButton">
