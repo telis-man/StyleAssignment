@@ -1,0 +1,102 @@
+.formComponent {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    width: 60%;
+    align-items: start;
+
+    h1 {
+        font-weight: 600;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .logInButton {
+        text-decoration: none;
+        color: #F2877D;
+    }
+
+
+    .alignedInCenter {
+        align-self: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            align-self: start;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+        }
+
+        .input-field {
+            position: relative;
+            width: 100%;
+
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 2%;
+                transform: translate(30%, -50%);
+                font-size: 20px;
+                color: rgb(166, 166, 166);
+                ;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px 40px;
+                // padding-left: 30px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 2px solid rgb(228, 228, 228);
+                background-color: white;
+            }
+
+        }
+
+
+        h2 {
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .submitButton {
+            margin-top: 2vh;
+            padding: 8px 20px;
+            border-radius: 5px;
+            width: 100%;
+            color: white;
+            background-color: #F2877D;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            border: none;
+        }
+
+    }
+
+    .buttonContainer {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .formComponent {
+        .buttonContainer {
+            flex-direction: column;
+
+        }
+
+    }
+}
