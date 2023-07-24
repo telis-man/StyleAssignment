@@ -4,7 +4,7 @@ import illustrationImage from "../../assets/illustration.svg";
 import logo from "../../assets/logo.svg";
 import "./RegistrationFormStyle.scss";
 
-export const RegistrationForm = ({}) => {
+export const RegistrationForm = () => {
   return (
     <div className="wrapper">
       <div className="imgContainer">
